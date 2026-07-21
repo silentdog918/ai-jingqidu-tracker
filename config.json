@@ -1,0 +1,50 @@
+{
+  "_说明": "改这里就能换关键词/包名/标的/播客源,改完 push 后下一次自动更新生效(也可在 Actions 页手动 Run workflow 立即生效)",
+  "openrouter": {
+    "new_models_count": 12,
+    "daily_keep_days": 45,
+    "daily_top_per_day": 60
+  },
+  "downloads": {
+    "series_days": 91,
+    "npm_packages": ["openai", "@anthropic-ai/sdk", "@google/genai", "ai", "langchain"],
+    "pypi_packages": ["openai", "anthropic", "google-genai", "langchain", "litellm", "vllm"]
+  },
+  "news": {
+    "per_category": 20,
+    "categories": [
+      { "name": "算力与资本开支", "query": "(\"AI datacenter\" OR \"data center\" capex OR GPU supply OR HBM OR \"AI infrastructure\" spending) when:2d", "hl": "en-US", "gl": "US", "ceid": "US:en", "lang": "en" },
+      { "name": "模型厂商", "query": "(OpenAI OR Anthropic OR \"Google DeepMind\" OR xAI OR DeepSeek OR Qwen OR Moonshot) when:2d", "hl": "en-US", "gl": "US", "ceid": "US:en", "lang": "en" },
+      { "name": "应用与商业化", "query": "(\"AI agent\" OR \"AI revenue\" OR \"AI adoption\" OR \"AI subscription\" OR copilot enterprise) when:2d", "hl": "en-US", "gl": "US", "ceid": "US:en", "lang": "en" },
+      { "name": "融资与IPO", "query": "(\"AI startup\" funding OR \"AI\" \"Series B\" OR \"AI\" IPO OR \"AI\" valuation round) when:2d", "hl": "en-US", "gl": "US", "ceid": "US:en", "lang": "en" },
+      { "name": "中文要闻", "query": "(大模型 OR AI芯片 OR 算力 OR 智能体 OR 英伟达) when:2d", "hl": "zh-CN", "gl": "CN", "ceid": "CN:zh-Hans", "lang": "zh" }
+    ]
+  },
+  "quotes": {
+    "spark_days": 60,
+    "groups": [
+      { "name": "算力链", "symbols": ["NVDA", "AVGO", "TSM", "VRT"] },
+      { "name": "云与大厂", "symbols": ["MSFT", "GOOGL", "META", "AMZN", "ORCL"] },
+      { "name": "AI 应用与新贵", "symbols": ["PLTR", "CRWV"] },
+      { "name": "基准", "symbols": ["QQQ"] }
+    ],
+    "names": {
+      "NVDA": "英伟达", "AVGO": "博通", "TSM": "台积电", "VRT": "Vertiv",
+      "MSFT": "微软", "GOOGL": "谷歌", "META": "Meta", "AMZN": "亚马逊", "ORCL": "甲骨文",
+      "PLTR": "Palantir", "CRWV": "CoreWeave", "QQQ": "纳指100ETF"
+    }
+  },
+  "podcasts": {
+    "max_per_feed": 5,
+    "max_total": 40,
+    "shows": [
+      { "name": "BG2", "feed": "https://anchor.fm/s/f06c2370/podcast/rss" },
+      { "name": "All-In", "feed": "https://allinchamathjason.libsyn.com/rss" },
+      { "name": "Invest Like the Best", "feed": "https://feeds.megaphone.fm/investlikethebest" },
+      { "name": "Dwarkesh Podcast", "feed": "https://www.dwarkesh.com/feed" },
+      { "name": "Latent Space", "feed": "https://www.latent.space/feed" },
+      { "name": "硅谷101", "feed": "https://feeds.fireside.fm/sv101/rss" },
+      { "name": "OnBoard!", "feed": "https://feed.xyzfm.space/xxg7ryklkkft" }
+    ]
+  }
+}
