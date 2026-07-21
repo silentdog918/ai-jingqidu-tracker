@@ -350,7 +350,7 @@ window.addEventListener("resize", () => charts.forEach(c => c.resize()));
 function renderStamp(meta) {
   if (!meta) { $("stamp").textContent = "数据未加载"; return; }
   const t = new Date(meta.generated_at);
-  $("stamp").textContent = "数据更新于 " + t.toLocaleString("zh-CN", { hour12: false }) + "(每日 06:30 GMT+8 自动抓取)";
+  $("stamp").textContent = "数据更新于 " + t.toLocaleString("zh-CN", { hour12: false }) + "(每日 06:45 GMT+8 自动抓取)";
 }
 
 function renderTiles(d) {
